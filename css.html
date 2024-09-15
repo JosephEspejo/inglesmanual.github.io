@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conceptos Básicos de CSS</title>
+    <title>Basic CSS Concepts</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Ejemplo de CSS propio con transiciones */
+        /* Custom CSS example with transitions */
         .custom-box {
             background-color: #f9f9f9;
             border: 2px solid #007bff;
@@ -16,7 +16,7 @@
             border-radius: 8px;
             margin-bottom: 20px;
             transition: background-color 0.5s ease, border-color 0.5s ease;
-            /* Transiciones en el fondo y el borde */
+            /* Transitions for background and border */
         }
 
         .custom-box:hover {
@@ -30,7 +30,7 @@
             font-weight: bold;
             text-align: center;
             transition: color 0.5s ease;
-            /* Transición de color */
+            /* Color transition */
         }
 
         .custom-text:hover {
@@ -48,12 +48,12 @@
             font-size: 20px;
             margin-bottom: 20px;
             transition: transform 0.5s ease, background-color 0.5s ease;
-            /* Transición de transformación y fondo */
+            /* Transformation and background transition */
         }
 
         .example-box:hover {
             transform: scale(1.1);
-            /* Escala al pasar el mouse */
+            /* Scaling on hover */
             background-color: #28a745;
         }
     </style>
@@ -62,7 +62,7 @@
 <body class="d-flex flex-column min-vh-100">
 
     <header class="bg-dark text-white text-center py-3">
-        <h1>Conceptos Básicos de CSS</h1>
+        <h1>Basic CSS Concepts</h1>
         <nav>
             <a href="index.html" class="text-white mx-2">HTML</a>
             <a href="#" class="text-white mx-2">CSS</a>
@@ -72,29 +72,25 @@
 
     <main class="container flex-grow-1 my-4">
         <section>
-            <h2>¿Qué es CSS?</h2>
-            <p>CSS (Cascading Style Sheets) es un lenguaje utilizado para describir el aspecto y la presentación de
-                documentos HTML. Permite cambiar el diseño visual de los elementos de una página web.</p>
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is a language used to describe the look and presentation of HTML documents. It allows you to change the visual design of web elements.</p>
             <div class="mt-3">
-                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#cssInfo">Más información
-                    sobre CSS</button>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#cssInfo">More information about CSS</button>
                 <div id="cssInfo" class="collapse mt-3">
-                    <p>CSS permite separar el contenido (HTML) de la presentación, lo que facilita la modificación del
-                        estilo sin afectar la estructura del documento. Se pueden cambiar colores, fuentes, tamaños,
-                        espaciado y mucho más.</p>
+                    <p>CSS allows you to separate content (HTML) from presentation, making it easier to modify the style without affecting the document's structure. You can change colors, fonts, sizes, spacing, and much more.</p>
                 </div>
             </div>
         </section>
 
         <section class="mt-4">
-            <h2>Estructura Básica de CSS</h2>
-            <p>La estructura básica de una regla CSS es la siguiente:</p>
+            <h2>Basic CSS Structure</h2>
+            <p>The basic structure of a CSS rule is as follows:</p>
             <pre class="bg-light p-3 border rounded">
 selector {
-    propiedad: valor;
+    property: value;
 }
         </pre>
-            <p>Por ejemplo, para cambiar el color de todos los párrafos a azul, usarías:</p>
+            <p>For example, to change the color of all paragraphs to blue, you would use:</p>
             <pre class="bg-light p-3 border rounded">
 p {
     color: blue;
@@ -103,25 +99,21 @@ p {
         </section>
 
         <section class="mt-4">
-            <h2>Ejemplos de Estilos CSS con Transiciones</h2>
+            <h2>CSS Style Examples with Transitions</h2>
             <div class="custom-box">
-                <p class="custom-text">Este es un ejemplo de texto con transición de color.</p>
+                <p class="custom-text">This is an example of text with a color transition.</p>
             </div>
             <div class="example-box">
-                Caja con transición de escala y color
+                Box with scale and color transition
             </div>
-            <p>Estos ejemplos muestran cómo CSS puede cambiar el estilo visual de los elementos HTML utilizando
-                transiciones para mejorar la experiencia visual.</p>
+            <p>These examples demonstrate how CSS can change the visual style of HTML elements using transitions to enhance the user experience.</p>
         </section>
 
         <section class="mt-4">
-            <h2>¿Qué son las transiciones en CSS?</h2>
-            <p>Las transiciones en CSS permiten que los cambios de propiedades, como colores o tamaños, ocurran de
-                manera gradual durante un período de tiempo.</p>
-            <p>Una transición básica se define usando la propiedad <code>transition</code>, especificando la propiedad a
-                animar, la duración y el tipo de curva de animación (por ejemplo, <code>ease</code>,
-                <code>linear</code>).</p>
-            <p>Ejemplo:</p>
+            <h2>What are CSS Transitions?</h2>
+            <p>CSS transitions allow property changes, such as colors or sizes, to occur gradually over a specified period of time.</p>
+            <p>A basic transition is defined using the <code>transition</code> property, specifying the property to animate, the duration, and the animation curve type (e.g., <code>ease</code>, <code>linear</code>).</p>
+            <p>Example:</p>
             <pre class="bg-light p-3 border rounded">
 .custom-box {
     background-color: #f9f9f9;
@@ -132,24 +124,21 @@ p {
     background-color: #007bff;
 }
         </pre>
-            <p>En este ejemplo, al pasar el cursor sobre el elemento con la clase <code>custom-box</code>, el color de
-                fondo cambiará suavemente a lo largo de 0.5 segundos.</p>
+            <p>In this example, hovering over the element with the class <code>custom-box</code> will smoothly change the background color over 0.5 seconds.</p>
         </section>
 
         <section class="mt-4">
-            <h2>Tipos de CSS</h2>
-            <p>Existen tres formas principales de aplicar CSS en una página web:</p>
+            <h2>Types of CSS</h2>
+            <p>There are three main ways to apply CSS in a web page:</p>
             <ul class="list-group">
                 <li class="list-group-item">
-                    <strong>CSS en línea:</strong> Estilos aplicados directamente a los elementos mediante el atributo
-                    <code>style</code>.
+                    <strong>Inline CSS:</strong> Styles applied directly to elements using the <code>style</code> attribute.
                     <pre class="bg-light p-2 border rounded">
-&lt;p style="color: red;"&gt;Texto en rojo&lt;/p&gt;
+&lt;p style="color: red;"&gt;Text in red&lt;/p&gt;
                 </pre>
                 </li>
                 <li class="list-group-item">
-                    <strong>CSS interno:</strong> Estilos dentro de la etiqueta <code>&lt;style&gt;</code> en la sección
-                    <code>&lt;head&gt;</code>.
+                    <strong>Internal CSS:</strong> Styles within the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.
                     <pre class="bg-light p-2 border rounded">
 &lt;style&gt;
     p { color: blue; }
@@ -157,8 +146,7 @@ p {
                 </pre>
                 </li>
                 <li class="list-group-item">
-                    <strong>CSS externo:</strong> Un archivo CSS separado que se vincula usando la etiqueta
-                    <code>&lt;link&gt;</code>.
+                    <strong>External CSS:</strong> A separate CSS file linked using the <code>&lt;link&gt;</code> tag.
                     <pre class="bg-light p-2 border rounded">
 &lt;link rel="stylesheet" href="styles.css"&gt;
                 </pre>
@@ -168,7 +156,7 @@ p {
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-auto">
-        <p>Conceptos Básicos de CSS - Página de Ejemplo</p>
+        <p>Basic CSS Concepts - Example Page</p>
     </footer>
 
     <!-- Bootstrap JS -->
